@@ -1,0 +1,10 @@
+# Nmap 6.47 scan initiated Wed Apr  8 21:45:33 2015 as: nmap -oA ms08_nmap -sS -p445 --script smb-check-vulns.nse -T4 --script-args=unsafe=1 -vv --reason 192.168.2.224
+Nmap scan report for XP-Test.ASUS-HUB (192.168.2.224)
+Host is up, received arp-response (0.00021s latency).
+Scanned at 2015-04-08 21:45:33 BST for 0s
+PORT    STATE    SERVICE      REASON
+445/tcp filtered microsoft-ds no-response
+MAC Address: 00:0C:29:2C:E9:0E (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Wed Apr  8 21:45:33 2015 -- 1 IP address (1 host up) scanned in 0.30 seconds

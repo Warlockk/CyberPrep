@@ -1,0 +1,5 @@
+# Nmap 6.47 scan initiated Wed Apr  8 21:45:33 2015 as: nmap -oA ms08_nmap -sS -p445 --script smb-check-vulns.nse -T4 --script-args=unsafe=1 -vv --reason 192.168.2.224
+# Ports scanned: TCP(1;445) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.2.224 (XP-Test.ASUS-HUB)	Status: Up
+Host: 192.168.2.224 (XP-Test.ASUS-HUB)	Ports: 445/filtered/tcp//microsoft-ds///
+# Nmap done at Wed Apr  8 21:45:33 2015 -- 1 IP address (1 host up) scanned in 0.30 seconds

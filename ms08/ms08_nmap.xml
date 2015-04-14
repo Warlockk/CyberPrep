@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 6.47 scan initiated Wed Apr  8 21:45:33 2015 as: nmap -oA ms08_nmap -sS -p445 -&#45;script smb-check-vulns.nse -T4 -&#45;script-args=unsafe=1 -vv -&#45;reason 192.168.2.224 -->
+<nmaprun scanner="nmap" args="nmap -oA ms08_nmap -sS -p445 -&#45;script smb-check-vulns.nse -T4 -&#45;script-args=unsafe=1 -vv -&#45;reason 192.168.2.224" start="1428525933" startstr="Wed Apr  8 21:45:33 2015" version="6.47" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="445"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="ARP Ping Scan" time="1428525933"/>
+<taskend task="ARP Ping Scan" time="1428525933" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1428525933"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1428525933"/>
+<taskbegin task="SYN Stealth Scan" time="1428525933"/>
+<taskend task="SYN Stealth Scan" time="1428525933" extrainfo="1 total ports"/>
+<host starttime="1428525933" endtime="1428525933"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.2.224" addrtype="ipv4"/>
+<address addr="00:0C:29:2C:E9:0E" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="XP-Test.ASUS-HUB" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="445"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<times srtt="210" rttvar="5000" to="100000"/>
+</host>
+<runstats><finished time="1428525933" timestr="Wed Apr  8 21:45:33 2015" elapsed="0.30" summary="Nmap done at Wed Apr  8 21:45:33 2015; 1 IP address (1 host up) scanned in 0.30 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
