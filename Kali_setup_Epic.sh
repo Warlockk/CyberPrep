@@ -20,10 +20,9 @@ tar xvf phantomjs-1.9.8-linux-i686.tar
 cp phantomjs-1.9.8-linux-i686/bin/phantomjs /usr/bin/
 git clone https://github.com/pentestgeek/smbexec.git /opt/smbexec
 cd /opt/smbexec && ./install.sh
-1
-4
-5
-./install.sh
+echo" Select opt 1"
+./install
+echo " Select opt 4"
 apt-get install git gcc make libpcap-dev
 git clone https://github.com/robertdavidgraham/masscan.git /opt/masscan
 cd /opt/masscan
