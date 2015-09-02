@@ -24,6 +24,6 @@ do
     echo "Number of Hosts Live on subnet $host" >> output.txt
     cat 0$COUNTER_nmap.gnmap | grep open | cut -d " " -f 2 | wc -l » output.txt
     echo "Live Hosts on $host" >> output.txt
-    cat 0$COUNTER_nmap.gnmap | grep open | cut -d " " -f 2 » live_targets.txt
+    cat 0$COUNTER_nmap.gnmap | grep open | cut -d " " -f 2 » output.txt
     echo " "
 done
